@@ -1,0 +1,12 @@
+import array
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    s=set(arr)
+    m= max(s)
+    a=[]
+    for i in s:
+        if i!=max(s):
+                a.append(i)
+    a=sorted(a)
+    print(a[len(a)-1])
