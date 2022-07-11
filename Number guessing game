@@ -1,0 +1,18 @@
+# guessing game
+import random
+print("Hello there!\nLets start guessing")
+Name =input("Tell me your name ")
+x=random.randint(1,10)
+print("I'm thinking of a number between 1 and 10")
+for i in range(10):
+    a =int(input())
+    if 1<=a<=10:
+        if a==x:
+            print("You've guessed it right,"+Name)
+            break
+        elif a<x:
+            print("Your guess is quite low,"+Name)
+        else:
+            print("Your guess is quite high,"+Name)
+    else:
+        print("Guess a number within the range,"+Name)
